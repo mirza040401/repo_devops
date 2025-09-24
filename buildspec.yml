@@ -3,9 +3,9 @@ version: 0.2
 phases: 
   install:
     commands:
-     - echo "installing NGINX"
-     - sudo yum update -y
-     - sudo install nginx -y
+     - echo installing NGINX
+     - sudo apt-get update -y
+     - sudo apt-get install nginx -y
     build:
      -echo Bulid started on 'date'
      -cp index.html /var/www/html/
